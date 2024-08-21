@@ -82,39 +82,53 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 25),
             Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {},
-                child: Text(
-                  'Temp',
-                  style: TextStyle(fontSize: 18), // Increase font size
-                ),
-                style: ElevatedButton.styleFrom(
-                  padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12), // Increase button size
-                ),
-              ),
-              SizedBox(width: 20), // Space between buttons
-                   ElevatedButton(
-                onPressed: () {},
-                child: Row(
-                  mainAxisSize: MainAxisSize.min, // Adjust the size to fit content
-                  children: [
-                    Text(
-                      'More Quotes',
-                      style: TextStyle(fontSize: 18), // Increase font size
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  // width: double.infinity,
+                  child: ElevatedButton( 
+                    
+                    onPressed: () {},
+                    child: Text(
+                      "Today's special occasion ",
+                      style:   
+                      TextStyle(
+                          fontSize: 18,
+                          color: ColorPallete.blueColor), // Increase font size
                     ),
-                    SizedBox(width: 8), // Space between text and icon
-                    Icon(Icons.arrow_forward), // Add arrow icon 
-                  ],
+                    style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.symmetric(horizontal:14, vertical: 12),
+                      // Increase button size
+                    ),
+                  ),
                 ),
-                style: ElevatedButton.styleFrom(
-                  padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12), // Increase button size
+                SizedBox(width: 20), // Space between buttons
+                SizedBox(
+                  // width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Row(
+                      mainAxisSize:
+                          MainAxisSize.min, // Adjust the size to fit content
+                      children: [
+                        Text(
+                          'More Quotes',
+                          style: TextStyle(fontSize: 18), // Increase font size
+                        ),
+                        SizedBox(width: 8), // Space between text and icon
+                        Icon(Icons.arrow_forward), // Add arrow icon
+                      ],
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.symmetric(
+                          horizontal: 24, vertical: 11), // Increase button size
+                    ),
+                  ),
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
           ]),
         ),
       ),

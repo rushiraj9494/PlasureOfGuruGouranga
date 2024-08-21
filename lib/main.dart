@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:mayapur_bace/features/home/home_screen.dart';
+import 'package:flutter/services.dart';
+
 
 void main() {
-  runApp( MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp, // Lock to portrait mode 
+  ]).then((_) {
+    runApp(MyApp());
+  });
 }
+
  
 class MyApp extends StatelessWidget {
   @override
